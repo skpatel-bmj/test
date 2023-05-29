@@ -25,8 +25,7 @@ jobs:
       - name: show all the file inside the /var/www/html folder
         run: |
           ls -altr
-          ls -al wp-content/themes/
-          ls -al wp-content/plugins/  
+          ls -al wp-content/themes/  
 
       - name: Show webpage output
         run: |
