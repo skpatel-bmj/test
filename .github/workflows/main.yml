@@ -21,3 +21,9 @@ jobs:
 
       - name: Start Apache HTTPD server
         run: sudo service apache2 start
+
+      - name: Show webpage output
+        run: |
+          echo "Webpage URL: http://localhost:80"
+          sleep 10s  # Give time for the server to start
+          curl http://localhost:80
