@@ -1,16 +1,19 @@
-name: Run on Different Operating Systems
+name: Example Workflow
+
 on:
   push:
     branches:
       - develop
 
 jobs:
-  build:
+  example_job:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Print OS
-      run: echo "Running on ${{ runner.os }}"
+      - name: Print .gitignore Path
+        run: echo "The .gitignore file is located at ${{ github.workspace }}/.gitignore"
+
+      # Perform other actions or operations on the .gitignore file as needed
