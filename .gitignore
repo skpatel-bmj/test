@@ -1,2 +1,4 @@
 # Ignore WordPress core files*/
-plugins/
+
+wp-content/plugins/
+h.html
