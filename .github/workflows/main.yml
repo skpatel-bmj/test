@@ -2,7 +2,7 @@ name: Run on Different Operating Systems
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   build:
